@@ -1,0 +1,562 @@
+/* ================= RESET ================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================= FONTE ================= */
+@font-face {
+    font-family: "Nordic";
+    src: url("../Styles/fonts/Nordic-Alternative.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+}
+
+/* ================= HEADER ================= */
+header {
+    padding: 20px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+header h1 {
+    font-family: "Nordic", sans-serif;
+    font-size: 3.2rem;
+    letter-spacing: 5px;
+    background: linear-gradient(90deg, #ffffff, #FF9A00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ================= NAV ================= */
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 17px;
+    transition: color 0.3s ease;
+  
+}
+
+header nav a:hover {
+    color: #faa72a;
+}
+
+/* ================= HERO ================= */
+/* Particles */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    font-size: 84px;
+    font-family: "Nordic", sans-serif;
+}
+
+.hero p {
+    text-align: center;
+    margin: 20px 0 100px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* ================= DETALHE ================= */
+.detalhe {
+    width: 500px;
+    height: 4px;
+    margin: 20px auto;
+    background: linear-gradient(90deg, #faa72a, #fdd36a);
+    border-radius: 10px;
+}
+
+.backgroud {
+    background: linear-gradient(to bottom, #d6d6d6, #ffffff);
+}
+
+
+
+
+/* ================= SOBRE MIM ================= */
+.secao-sobre-mim {
+    padding: 100px 20px;
+
+}
+
+.secao-sobre-mim h2 {
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 44px;
+    font-family: "Nordic", sans-serif;
+    margin-bottom: 20px;
+}
+
+.secao-sobre-mim p {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* ================= ANIMAÇÃO SCROLL ================= */
+
+/* ================= DETALHE INFO ================= */
+.detalhe_infos {
+    width: 300px;
+    height: 4px;
+    margin: 0 auto 40px;
+    background: linear-gradient(90deg, #faa72a, #fdd36a);
+    border-radius: 2px;
+}
+
+/* ================= LINGUAGENS ================= */
+
+
+.secao-linguagens {
+    padding: 200px 20px;
+}
+
+.secao-linguagens h2 {
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 44px;
+    font-family: "Nordic", sans-serif;
+    margin-bottom: 20px;
+}
+
+.linguagens-container {
+    display: grid;
+    padding: 150px 0;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.linguagens-card {
+    position: relative;
+    height: 230px;
+    width: 200px;
+    background: linear-gradient(to top, #c0c0c0, #e5e5e5);
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease;
+    overflow: visible;
+}
+
+
+.linguagens-card:hover {
+    transform: translateY(-12px);
+}
+
+
+.icon-box-linguagens {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+}
+
+
+.linguagens-card:hover .icon-box-linguagens {
+    top: -60px;
+}
+
+
+.icon-box-linguagens i {
+    font-size: 90px;
+    color: rgb(75, 75, 75);
+    transition: 0.4s ease;
+}
+
+
+
+/* HTML */
+.linguagens-card.html:hover {
+    background: linear-gradient(to top, #E34F26, #ff7a59);
+}
+
+.linguagens-card.html:hover .icon-box-linguagens i {
+    color: black;
+}
+
+/* CSS */
+.linguagens-card.css:hover {
+    background: linear-gradient(to top, #1572B6, #4ea3e3);
+}
+
+.linguagens-card.css:hover .icon-box-linguagens i {
+    color: black;
+}
+
+/* JavaScript */
+.linguagens-card.js:hover {
+    background: linear-gradient(to top, #F7DF1E, #ffe866);
+}
+
+.linguagens-card.js:hover .icon-box-linguagens i {
+    color:black;
+}
+
+/* Java */
+.linguagens-card.java:hover {
+    background: linear-gradient(to top, #007396, #00a0c6);
+}
+
+.linguagens-card.java:hover .icon-box-linguagens i {
+    color: black;
+}
+
+/* Python */
+.linguagens-card.python:hover {
+    background: linear-gradient(to top, #3776AB, #5fa8e0);
+}
+
+.linguagens-card.python:hover .icon-box-linguagens i {
+    color: black;
+}
+.content {
+    position: absolute;
+    bottom: 30px;
+    padding: 0 20px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s ease;
+    pointer-events: none;
+}
+
+.linguagens-card:hover .content {
+    opacity: 1;
+}
+
+
+ .content h3 {
+    color: #2b2b2b;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Nordic", sans-serif;
+    position: relative;
+}
+
+.content h3::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin: 8px auto 0;
+    background: linear-gradient(90deg, #faa72a, #fdd36a);
+    border-radius: 2px;
+}
+
+.content p {
+    padding: 20px 0 0;
+    font-size: 14px;
+    color: #2b2b2b;
+}
+
+/* ================= PROJETOS ================= */
+
+.secao-projetos {
+    padding: 0px 20px;
+}
+
+.secao-projetos h2 {
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 44px;
+    font-family: "Nordic", sans-serif;
+    margin-bottom: 40px;
+}
+
+
+
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center; 
+    margin-top: 120px;
+    padding: 20px; /
+}
+
+.projetos-card {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: linear-gradient(to top, #505050, #757575);
+    border-radius: 22px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: all 0.45s cubic-bezier(0.25, 1, 0.5, 1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; 
+}
+
+
+.projetos-card:hover {
+    width: 460px;
+    height: 460px;
+    transform: translateY(-10px); 
+    box-shadow: 0 50px 120px rgba(0,0,0,0.4);
+    z-index: 10; 
+    justify-content: flex-start; 
+}
+
+
+
+.img-box-projetos {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.45s ease;
+}
+
+
+.img-box-projetos .titulo-card {
+    position: absolute;
+    font-family: "Nordic", sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    z-index: 2;
+}
+
+.img-box-projetos .img-logo {
+    width: 200px; 
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+
+.img-projeto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    opacity: 0;
+    border-radius: 22px 22px 0 0; 
+    transition: 0.45s ease;
+}
+
+
+
+.projetos-card:hover .titulo-card,
+.projetos-card:hover .img-logo {
+    opacity: 0;
+    transform: scale(0.5);
+    visibility: hidden; 
+}
+
+.projetos-card:hover .img-projeto {
+    opacity: 1;
+}
+
+
+
+
+.content-projeto {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 260px; 
+    padding: 20px 40px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.45s ease;
+    transition-delay: 0.1s; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos-card:hover .content-projeto {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content-projeto h3 {
+    color: #ffffff;
+    font-family: "Nordic", sans-serif;
+    font-size: 26px;
+    margin: 0 0 10px 0;
+}
+
+
+.content-projeto h3::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 8px auto;
+    background: linear-gradient(90deg, #faa72a, #fdd36a);
+    border-radius: 2px;
+}
+
+.content-projeto p {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-projeto a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #faa72a, #fdd36a);
+    color: #2b2b2b;
+    border-radius: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.content-projeto a:hover {
+    transform: scale(1.05);
+}
+/* ================= CONTATOS ================= */
+
+.secao-contatos {
+    padding: 250px 20px;
+}
+
+.secao-contatos h2 {
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 44px;
+    font-family: "Nordic", sans-serif;
+    margin-bottom: 40px;
+}
+.secao-contatos h3 {
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 34px;
+    font-family: "Nordic", sans-serif;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.icons-contatos {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 90px;
+}
+
+.contato-item {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+.icon-box-contato {
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff00;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0px;
+    transition: transform 0.3s ease;
+}
+
+.icon-box-contato i {
+    font-size: 100px;
+    color: rgb(75, 75, 75);
+    transition: color 0.3s ease;
+}
+.contato-item span {
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.email:hover .icon-box-contato i,
+.email:hover span {
+    color: #faa72a;
+}
+.linkedin:hover .icon-box-contato i,
+.linkedin:hover span {
+    color: #faa72a;
+}
+.github:hover .icon-box-contato i,
+.github:hover span {
+    color: #faa72a;
+}
+
+.whatsapp:hover .icon-box-contato i,
+.whatsapp:hover span {
+    color: #faa72a;
+}
+.contact-item:hover .icon-box-contato {
+    transform: translateY(-6px);
+}
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #ffffff;
+    font-family: "Nordic", sans-serif;
+    font-size: 20px;
+}
+footer span {
+    font-weight: 600;
+    background: linear-gradient(90deg, #ffffff, #FF9A00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
