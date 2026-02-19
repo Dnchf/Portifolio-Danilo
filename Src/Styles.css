@@ -560,3 +560,190 @@ footer span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* ================= RESPONSIVIDADE ================= */
+
+/* ===== TELAS ATÉ 1200px (notebooks menores) ===== */
+@media (max-width: 1200px) {
+
+    .hero h1 {
+        font-size: 64px;
+    }
+
+    .secao-sobre-mim p {
+        font-size: 24px;
+    }
+
+    .linguagens-container {
+        padding: 80px 0;
+    }
+
+    .icons-contatos {
+        gap: 50px;
+    }
+}
+
+
+/* ===== TELAS ATÉ 992px (tablets) ===== */
+@media (max-width: 992px) {
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header nav a {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        padding-top: 60px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .detalhe {
+        width: 300px;
+    }
+
+    .secao-sobre-mim p {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .linguagens-card {
+        width: 180px;
+        height: 200px;
+    }
+
+    .icon-box-linguagens i {
+        font-size: 70px;
+    }
+
+    .projetos-card:hover {
+        width: 360px;
+        height: 400px;
+    }
+
+    .icons-contatos {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .icon-box-contato i {
+        font-size: 70px;
+    }
+}
+
+
+/* ===== TELAS ATÉ 768px (celulares grandes) ===== */
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    .secao-sobre-mim h2,
+    .secao-linguagens h2,
+    .secao-projetos h2,
+    .secao-contatos h2 {
+        font-size: 32px;
+    }
+
+    .secao-sobre-mim p {
+        font-size: 18px;
+    }
+
+    .linguagens-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 60px 0;
+    }
+
+    .projetos-container {
+        margin-top: 60px;
+        gap: 30px;
+    }
+
+    .projetos-card {
+        width: 90%;
+        height: 260px;
+    }
+
+    /* Remove expansão gigante no mobile */
+    .projetos-card:hover {
+        width: 95%;
+        height: auto;
+    }
+
+    .content-projeto {
+        position: relative;
+        height: auto;
+        padding: 20px;
+    }
+
+    .icons-contatos {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    .icon-box-contato i {
+        font-size: 60px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+
+/* ===== TELAS ATÉ 480px (celulares pequenos) ===== */
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .detalhe {
+        width: 200px;
+    }
+
+    .secao-sobre-mim p {
+        font-size: 16px;
+    }
+
+    .icon-box-linguagens i {
+        font-size: 60px;
+    }
+
+    .content-projeto h3 {
+        font-size: 20px;
+    }
+
+    .content-projeto p {
+        font-size: 14px;
+    }
+
+}
