@@ -8,7 +8,7 @@
 /* ================= FONTE ================= */
 @font-face {
     font-family: "Nordic";
-    src: url("../Styles/fonts/Nordic-Alternative.woff") format("woff");
+    src: url("../Src/fonts/Nordic-Alternative.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
