@@ -559,10 +559,12 @@ footer span {
     background: linear-gradient(90deg, #ffffff, #FF9A00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
+
 /* ================= RESPONSIVIDADE ================= */
 
-/* ===== TELAS ATÉ 1200px (notebooks menores) ===== */
+
 @media (max-width: 1200px) {
 
     .hero h1 {
@@ -583,7 +585,6 @@ footer span {
 }
 
 
-/* ===== TELAS ATÉ 992px (tablets) ===== */
 @media (max-width: 992px) {
 
     header h1 {
@@ -638,7 +639,7 @@ footer span {
 }
 
 
-/* ===== TELAS ATÉ 768px (celulares grandes) ===== */
+
 @media (max-width: 768px) {
 
     .header-container {
@@ -687,7 +688,7 @@ footer span {
         height: 260px;
     }
 
-    /* Remove expansão gigante no mobile */
+
     .projetos-card:hover {
         width: 95%;
         height: auto;
@@ -715,7 +716,7 @@ footer span {
 }
 
 
-/* ===== TELAS ATÉ 480px (celulares pequenos) ===== */
+
 @media (max-width: 480px) {
 
     .hero h1 {
