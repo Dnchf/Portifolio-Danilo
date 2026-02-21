@@ -31,7 +31,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 
 }
 
@@ -53,7 +53,7 @@ header nav a {
     margin-left: 15px;
     font-size: 17px;
     transition: color 0.3s ease;
-  
+
 }
 
 header nav a:hover {
@@ -85,6 +85,7 @@ header nav a:hover {
     font-size: 84px;
     font-family: "Nordic", sans-serif;
 }
+
 .hero h1 span {
     background: linear-gradient(90deg, #fdaa2d, #fabd61, #fdaa2d);
     -webkit-background-clip: text;
@@ -107,9 +108,19 @@ header nav a:hover {
 }
 
 @keyframes blink {
-    0%, 50%, 100% { opacity: 1; }
-    25%, 75% { opacity: 0; }
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
 }
+
 /* ================= DETALHE ================= */
 .detalhe {
     width: 500px;
@@ -143,7 +154,7 @@ header nav a:hover {
 .sobre-img img {
     width: 350px;
     border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
 }
 
 .sobre-texto {
@@ -171,7 +182,7 @@ header nav a:hover {
 }
 
 .destaques div {
-    background: linear-gradient(90deg, #faa72a, #fdd36a, #faa72a);    
+    background: linear-gradient(90deg, #faa72a, #fdd36a, #faa72a);
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 14px;
@@ -199,7 +210,7 @@ header nav a:hover {
 .reveal {
     opacity: 0;
     transform: translateY(60px) scale(0.98);
-    transition: 
+    transition:
         opacity 1s cubic-bezier(0.22, 1, 0.36, 1),
         transform 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -222,7 +233,7 @@ header nav a:hover {
 
 
 .secao-linguagens {
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
 
 .secao-linguagens h2 {
@@ -239,7 +250,7 @@ header nav a:hover {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
     max-width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .linguagens-card {
@@ -282,49 +293,47 @@ header nav a:hover {
 
 
 /* HTML */
-.linguagens-card.html:hover {
-    background: linear-gradient(to top, #E34F26, #ff7a59);
-}
+
 
 .linguagens-card.html:hover .icon-box-linguagens i {
-    color: black;
+    background: linear-gradient(to top, #E34F26, #ff7a59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* CSS */
-.linguagens-card.css:hover {
-    background: linear-gradient(to top, #1572B6, #4ea3e3);
-}
+
 
 .linguagens-card.css:hover .icon-box-linguagens i {
-    color: black;
+    background: linear-gradient(to top, #1572B6, #4ea3e3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* JavaScript */
-.linguagens-card.js:hover {
-    background: linear-gradient(to top, #F7DF1E, #ffe866);
-}
+
 
 .linguagens-card.js:hover .icon-box-linguagens i {
-    color:black;
+    background: linear-gradient(to top, #F7DF1E, #ffe866);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Java */
-.linguagens-card.java:hover {
-    background: linear-gradient(to top, #007396, #00a0c6);
-}
 
 .linguagens-card.java:hover .icon-box-linguagens i {
-    color: black;
+    background: linear-gradient(to top, #007396, #00a0c6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Python */
-.linguagens-card.python:hover {
-    background: linear-gradient(to top, #3776AB, #5fa8e0);
-}
 
 .linguagens-card.python:hover .icon-box-linguagens i {
-    color: black;
-}
+    background: linear-gradient(to top, #3776AB, #5fa8e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
 .content {
     position: absolute;
     bottom: 30px;
@@ -340,8 +349,8 @@ header nav a:hover {
 }
 
 
- .content h3 {
-    color: #2b2b2b;
+.content h3 {
+    color: #585858;
     font-size: 24px;
     font-weight: 600;
     font-family: "Nordic", sans-serif;
@@ -361,7 +370,7 @@ header nav a:hover {
 .content p {
     padding: 20px 0 0;
     font-size: 14px;
-    color: #2b2b2b;
+    color: #585858;
 }
 
 /* ================= PROJETOS ================= */
@@ -385,9 +394,9 @@ header nav a:hover {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
     justify-items: center;
-    align-items: center; 
+    align-items: center;
     margin-top: 120px;
-    padding: 20px; /
+    padding: 20px;/
 }
 
 .projetos-card {
@@ -396,24 +405,24 @@ header nav a:hover {
     height: 260px;
     background: linear-gradient(to top, #505050, #757575);
     border-radius: 22px;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    transition: all 0.45s cubic-bezier(0.25, 1, 0.5, 1); 
+    transition: all 0.45s cubic-bezier(0.25, 1, 0.5, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 1; 
+    z-index: 1;
 }
 
 
 .projetos-card:hover {
     width: 460px;
     height: 460px;
-    transform: translateY(-10px); 
-    box-shadow: 0 50px 120px rgba(0,0,0,0.4);
-    z-index: 10; 
-    justify-content: flex-start; 
+    transform: translateY(-10px);
+    box-shadow: 0 50px 120px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    justify-content: flex-start;
 }
 
 
@@ -442,7 +451,7 @@ header nav a:hover {
 }
 
 .img-box-projetos .img-logo {
-    width: 200px; 
+    width: 200px;
     opacity: 1;
     transform: scale(1);
     transition: 0.4s;
@@ -455,9 +464,9 @@ header nav a:hover {
     left: 0;
     width: 100%;
     height: 200px;
-    object-fit: cover; 
+    object-fit: cover;
     opacity: 0;
-    border-radius: 22px 22px 0 0; 
+    border-radius: 22px 22px 0 0;
     transition: 0.45s ease;
 }
 
@@ -467,7 +476,7 @@ header nav a:hover {
 .projetos-card:hover .img-logo {
     opacity: 0;
     transform: scale(0.5);
-    visibility: hidden; 
+    visibility: hidden;
 }
 
 .projetos-card:hover .img-projeto {
@@ -481,13 +490,13 @@ header nav a:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 260px; 
+    height: 260px;
     padding: 20px 40px;
     text-align: center;
     opacity: 0;
     transform: translateY(50px);
     transition: 0.45s ease;
-    transition-delay: 0.1s; 
+    transition-delay: 0.1s;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -541,13 +550,14 @@ header nav a:hover {
     font-weight: 600;
     text-decoration: none;
     font-size: 14px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
 }
 
 .content-projeto a:hover {
     transform: scale(1.05);
 }
+
 /* ================= CONTATOS ================= */
 
 .secao-contatos {
@@ -561,14 +571,16 @@ header nav a:hover {
     font-family: "Nordic", sans-serif;
     margin-bottom: 40px;
 }
+
 .secao-contatos h3 {
     text-align: center;
     color: #2b2b2b;
-    font-size: 34px;
+    font-size: 24px;
     font-family: "Nordic", sans-serif;
     margin-bottom: 20px;
     margin-top: 40px;
 }
+
 .icons-contatos {
     display: flex;
     justify-content: center;
@@ -582,6 +594,7 @@ header nav a:hover {
     color: #000000;
     font-family: Arial, sans-serif;
 }
+
 .icon-box-contato {
     width: 70px;
     height: 70px;
@@ -599,18 +612,22 @@ header nav a:hover {
     color: rgb(75, 75, 75);
     transition: color 0.3s ease;
 }
+
 .contato-item span {
     font-size: 16px;
     transition: color 0.3s ease;
 }
+
 .email:hover .icon-box-contato i,
 .email:hover span {
     color: #faa72a;
 }
+
 .linkedin:hover .icon-box-contato i,
 .linkedin:hover span {
     color: #faa72a;
 }
+
 .github:hover .icon-box-contato i,
 .github:hover span {
     color: #faa72a;
@@ -620,9 +637,11 @@ header nav a:hover {
 .whatsapp:hover span {
     color: #faa72a;
 }
+
 .contact-item:hover .icon-box-contato {
     transform: translateY(-6px);
 }
+
 /* ================= FOOTER ================= */
 footer {
     text-align: center;
@@ -631,6 +650,7 @@ footer {
     font-family: "Nordic", sans-serif;
     font-size: 20px;
 }
+
 footer span {
     font-weight: 600;
     background: linear-gradient(90deg, #ffffff, #FF9A00);
@@ -639,189 +659,3 @@ footer span {
 
 }
 
-/* ================= RESPONSIVIDADE ================= */
-
-
-@media (max-width: 1200px) {
-
-    .hero h1 {
-        font-size: 64px;
-    }
-
-    .secao-sobre-mim p {
-        font-size: 24px;
-    }
-
-    .linguagens-container {
-        padding: 80px 0;
-    }
-
-    .icons-contatos {
-        gap: 50px;
-    }
-}
-
-
-@media (max-width: 992px) {
-
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    header nav a {
-        font-size: 15px;
-        margin-left: 10px;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-        padding-top: 60px;
-    }
-
-    .hero p {
-        font-size: 20px;
-    }
-
-    .detalhe {
-        width: 300px;
-    }
-
-    .secao-sobre-mim p {
-        font-size: 20px;
-        padding: 0 10px;
-    }
-
-    .linguagens-card {
-        width: 180px;
-        height: 200px;
-    }
-
-    .icon-box-linguagens i {
-        font-size: 70px;
-    }
-
-    .projetos-card:hover {
-        width: 360px;
-        height: 400px;
-    }
-
-    .icons-contatos {
-        flex-wrap: wrap;
-        gap: 40px;
-    }
-
-    .icon-box-contato i {
-        font-size: 70px;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-
-    .header-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    header nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .hero p {
-        font-size: 18px;
-        padding: 0 15px;
-    }
-
-    .secao-sobre-mim h2,
-    .secao-linguagens h2,
-    .secao-projetos h2,
-    .secao-contatos h2 {
-        font-size: 32px;
-    }
-
-    .secao-sobre-mim p {
-        font-size: 18px;
-    }
-
-    .linguagens-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        padding: 60px 0;
-    }
-
-    .projetos-container {
-        margin-top: 60px;
-        gap: 30px;
-    }
-
-    .projetos-card {
-        width: 90%;
-        height: 260px;
-    }
-
-
-    .projetos-card:hover {
-        width: 95%;
-        height: auto;
-    }
-
-    .content-projeto {
-        position: relative;
-        height: auto;
-        padding: 20px;
-    }
-
-    .icons-contatos {
-        flex-direction: column;
-        gap: 40px;
-        margin-top: 50px;
-    }
-
-    .icon-box-contato i {
-        font-size: 60px;
-    }
-
-    footer {
-        font-size: 16px;
-    }
-}
-
-
-
-@media (max-width: 480px) {
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .detalhe {
-        width: 200px;
-    }
-
-    .secao-sobre-mim p {
-        font-size: 16px;
-    }
-
-    .icon-box-linguagens i {
-        font-size: 60px;
-    }
-
-    .content-projeto h3 {
-        font-size: 20px;
-    }
-
-    .content-projeto p {
-        font-size: 14px;
-    }
-
-}
