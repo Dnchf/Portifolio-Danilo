@@ -293,8 +293,6 @@ header nav a:hover {
 
 
 /* HTML */
-
-
 .linguagens-card.html:hover .icon-box-linguagens i {
     background: linear-gradient(to top, #E34F26, #ff7a59);
     -webkit-background-clip: text;
@@ -302,8 +300,6 @@ header nav a:hover {
 }
 
 /* CSS */
-
-
 .linguagens-card.css:hover .icon-box-linguagens i {
     background: linear-gradient(to top, #1572B6, #4ea3e3);
     -webkit-background-clip: text;
@@ -311,8 +307,6 @@ header nav a:hover {
 }
 
 /* JavaScript */
-
-
 .linguagens-card.js:hover .icon-box-linguagens i {
     background: linear-gradient(to top, #F7DF1E, #ffe866);
     -webkit-background-clip: text;
@@ -320,7 +314,6 @@ header nav a:hover {
 }
 
 /* Java */
-
 .linguagens-card.java:hover .icon-box-linguagens i {
     background: linear-gradient(to top, #007396, #00a0c6);
     -webkit-background-clip: text;
@@ -328,7 +321,6 @@ header nav a:hover {
 }
 
 /* Python */
-
 .linguagens-card.python:hover .icon-box-linguagens i {
     background: linear-gradient(to top, #3776AB, #5fa8e0);
     -webkit-background-clip: text;
