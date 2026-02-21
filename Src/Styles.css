@@ -332,7 +332,8 @@ header nav a:hover {
 .linguagens-card.python:hover .icon-box-linguagens i {
     background: linear-gradient(to top, #3776AB, #5fa8e0);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;}
+    -webkit-text-fill-color: transparent;
+}
 
 .content {
     position: absolute;
@@ -658,4 +659,3 @@ footer span {
     -webkit-text-fill-color: transparent;
 
 }
-
