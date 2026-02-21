@@ -1,18 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const sobreMim = document.querySelector("#sobre-mim");
+    const elements = document.querySelectorAll(".reveal");
 
-    const observer = new IntersectionObserver(
-        ([entry]) => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
             if (entry.isIntersecting) {
-                sobreMim.classList.add("show");
-            } else {
-                sobreMim.classList.remove("show");
+                entry.target.classList.add("show");
             }
-        },
-        {
-            threshold: 0.3
-        }
-    );
+        });
+    }, {
+        threshold: 0.2
+    });
 
-    observer.observe(sobreMim);
+    elements.forEach(el => observer.observe(el));
 });

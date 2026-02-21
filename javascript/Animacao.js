@@ -1,21 +1,43 @@
 /* ================= DIGITAÇÃO ================= */
+const texts = [
+    "Estudante de Análise e Desenvolvimento de Sistemas",
+    "Apaixonado por tecnologia e inovação",
+    "Futuro Desenvolvedor Full Stack"
+];
 
-const text = "Estudante de Análise e Desenvolvimento de Sistemas\nApaixonado por tecnologia e inovação";
 const typingElement = document.getElementById("typing-name");
 
-let index = 0;
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 
 function typeEffect() {
-    if (index < text.length) {
-        if (text.charAt(index) === "\n") {
-            typingElement.innerHTML += "<br>";
-        } else {
-            typingElement.innerHTML += text.charAt(index);
+    const currentText = texts[textIndex];
+    
+    if (!isDeleting) {
+        // DIGITANDO
+        typingElement.innerHTML = currentText.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentText.length) {
+            setTimeout(() => isDeleting = true, 1500); // espera antes de apagar
         }
-        index++;
-        setTimeout(typeEffect, 120);
+    } else {
+        // APAGANDO
+        typingElement.innerHTML = currentText.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % texts.length;
+        }
     }
+
+    const speed = isDeleting ? 50 : 100;
+    setTimeout(typeEffect, speed);
 }
+
+document.addEventListener("DOMContentLoaded", typeEffect);
 
 typeEffect();
 
